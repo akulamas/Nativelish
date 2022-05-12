@@ -13,341 +13,226 @@ body{
         background: url(../images/фон.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;        
+        height: 100vh;
+    }
+    /* NAVIGATION */
+  /* NAVIGATION */
+   
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
     }
     
-    /* NAVIGATION */
-     /* NAVIGATION */
-   
-     ul {
-        margin-block-start: 0;
-        margin-block-end: 0;
-        padding-inline-start: 0;
-        }
-        
-        .header {
-            width: calc(100vw - 210 * (100vw / 1440));
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            padding-top: 1%;
-        }
-        
-        .logo svg {
-            width: calc(35px + 10 * (100vw / 1440));
-            transform: scale(1.3);
-        }
-        
-        .nav {
-        width: calc(130px + 55 * (100vw / 1440));
-        position: relative;
-        }
-        
-        .nav-elements {
-        width: 170px;
-        right: 7%;
-        position: fixed;
-        z-index: 500;
-        }
-        
-        .nav__text {
-        left: 0;
-        color: #fff;
-        position: absolute;
-        top: 50%;
-        font-family: 'Montserrat';
-        margin-top: 4%;
-        user-select: none;
-        font-size: 30px;
-        font-weight: 800;
-        align-items: center;
-        transition: 1.5s;
-        z-index: 105;
-        }
-        
-        .nav__text.active {
-        opacity: 1;
-        }
-        
-        .hamb {
-        position: absolute;
-        right: 0;
-        background-image: url(../images/burg4.png);
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        transition: 0.1s;
-        z-index: 105;
-        }
-        
-        .hamb__design_line {
-        width: 100%;
-        height: 5px;
-        position: absolute;
-        background-color: rgba(42, 90, 129);
-        }
-        .hamb__design {
-        border: 15px solid transparent;
-        border-top: 15px solid rgba(42, 90, 129);
-        position: absolute;
-        right: 28%;
-        }
-        
-        .hamb__design2 {
-        border: 15px solid transparent;
-        border-top: 15px solid rgba(42, 90, 129);
-        position: absolute;
-        left: 30%;
-        }
-        
-        .hamb.active {
-        background-image: url(../images/closeburg4.png);
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-        }
-        
+    .header {
+        width: calc(100vw - 210 * (100vw / 1440));
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1%;
+    }
+    
+    .logo svg {
+        width: calc(35px + 10 * (100vw / 1440));
+        transform: scale(1.3);
+    }
+    
+    .nav {
+    width: calc(130px + 55 * (100vw / 1440));
+    position: relative;
+    }
+    
+    .nav-elements {
+    width: 170px;
+    right: 7%;
+    position: fixed;
+    z-index: 500;
+    }
+    
+    .nav__text {
+    left: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    font-family: 'Montserrat';
+    margin-top: 4%;
+    user-select: none;
+    font-size: 30px;
+    font-weight: 800;
+    align-items: center;
+    transition: 1.5s;
+    z-index: 105;
+    }
+    
+    .nav__text.active {
+    opacity: 1;
+    }
+    
+    .hamb {
+    position: absolute;
+    right: 0;
+    background-image: url(../images/burg4.png);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: 0.1s;
+    z-index: 105;
+    }
+    
+    .hamb__design_line {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: rgba(42, 90, 129);
+    }
+    .hamb__design {
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(42, 90, 129);
+    position: absolute;
+    right: 28%;
+    }
+    
+    .hamb__design2 {
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(42, 90, 129);
+    position: absolute;
+    left: 30%;
+    }
+    
+    .hamb.active {
+    background-image: url(../images/closeburg4.png);
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    }
+    
     .hamb__menu {
-        position: fixed;
-        top: calc(55px + 30 * (100vw / 1440));
-        margin-top: 0%;
-        display: none;
-        transition: 1s;
-        right: 0;
-        background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
-        z-index: 100;
-        }
-        
-        .hamb__menu li {
-        width: 420px;
-        height: 70px;
-        display: flex;
-        align-items: center;
-        padding-left: 8%;
-        color: black;
-        }
-        .hamb__text {
-        user-select: none;
-        border-color: black;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        }
-        
-        .hamb__text li {
-        cursor: pointer;
-        }
-        
-        .hamb__menu.active {
-        display: flex;
-        }
-        
-        .hamb__text li,
-        .hamb__text a {
-        text-decoration: none;
-        list-style-type: none;
-        }
-        
-        .firstlayer:hover {
-        width: 100%;
-        color: #fff;
-        background-color: rgba(247, 105, 121, 0.9);
-        transition: 0.25s;
-        }
-        
-        .more__counties:hover {
-        width: 100%;
-        color: #fff;
-        background-color: rgba(247, 105, 121, 0.9);
-        transition: 0.25s;
-        }
-        
-        .more__counties li:hover {
-        width: 100%;
-        color: #fff;
-        background-color: rgba(247, 105, 121, 0.9);
-        transition: 0.25s;
-        }
-        
-        .more__interactive li:hover {
-        width: 100%;
-        color: #fff;
-        background-color: rgba(247, 105, 121, 0.9);
-        transition: 0.25s;
-        }
-        
-        .more__interactive:hover {
-        width: 100%;
-        color: #fff;
-        background-color: rgba(247, 105, 121, 0.9);
-        transition: 0.25s;
-        }
-        
-        .more__interactive.nohover {
-        color: black;
-        background-color: transparent;
-        }
-        
-        .more__counties.nohover {
-        color: black;
-        background-color: transparent;
-        }
-        
-        
-        .more__counties ul{
-        position: absolute;
-        display: none;
-        transition: 1s;
-        top: 50%;
-        left: 40%;
-        z-index: 105;
-        background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
-        }
-        
-        .more__interactive ul {
-        display: none;
-        position: absolute;
-        top: 75%;
-        left: 40%;
-        z-index: 105;
-        transition: 1s;
-        background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
-        }
-        
-        .more__counties.active ul {
-        display: block;
-        }
-        
-        .more__interactive.active ul {
-        display: block;
-        }
-        
-        .more__counties.active {
-        color: #fff;
-        background: rgba(247, 105, 121, 0.9);
-        }
-        
-        .more__interactive.active {
-        color: #fff;
-        background: rgba(247, 105, 121, 0.9);
-        }
-        
-        @media (max-width: 768px) {
-        .hamb__menu {
-            background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.3) 155.89%);
-            width: 100vw;
-            height: 86vh;
-            overflow: scroll;
-            left: 0;
-        }
-        
-        .hamb__menu li {
-            width: 100vw;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            color: black;
-            padding-left: 0;
-        }
-        
-        .hamb__menu li p {
-            padding-left: 7%;
-        }
-        
-        .hamb__design {
-            border: 15px solid transparent;
-            border-top: 15px solid rgba(42, 90, 129);
-            position: absolute;
-            right: 28%;
-            display: none;
-        }
-        
-        .hamb__design2 {
-            border: 15px solid transparent;
-            border-top: 15px solid rgba(42, 90, 129);
-            position: absolute;
-            left: 30%;
-            display: none;
-        }
-        
-        .more__counties ul li p {
-            padding-left: 17%;
-        }
-        
-        .more__counties:hover {
-            width: 100vw;
-        }
-        
-        .more__interactive:hover {
-            width: 100vw;
-        }
-        
-        .more__counties li:hover {
-            width: 100vw;
-            color: #fff;
-            background-color: rgba(247, 105, 121, 0.9);
-            transition: 0.25s;
-        }
-        
-        .more__interactive li:hover {
-            width: 100vw;
-            color: #fff;
-            background-color: rgba(247, 105, 121, 0.9);
-            transition: 0.25s;
-        }
-        
-        .firstlayer:hover {
-            width: 100vw;
-        }
-        
-        .more__counties ul{
-            padding-left: 0%;
-            width: 100vw;
-            position: absolute;
-            display: none;
-            transition: 1s;
-            left: 0;
-            top: 140px;
-            z-index: 105;
-            background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
-        }
-        
-        
-        .hamb__design_line {
-            left: 0;
-            width: 100vw;
-        }
-        
-        #fixedahah {
-        position: fixed;
-        width: 100vw;
-        z-index: 500;
-        }
-        
-        .more__interactive ul {
-            padding-left: 0%;
-            width: 100vw;
-            display: none;
-            position: absolute;
-            top: 210px;
-            left: 0;
-            z-index: 105;
-            transition: 1s;
-            background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
-        }
-        
-        .more__interactive ul li p {
-            padding-left: 17%;
-        }
-        
-        
-        .nav__text.active {
-            display: none;
-        }
-        }
-
+    position: fixed;
+    top: calc(55px + 30 * (100vw / 1440));
+    margin-top: 0%;
+    display: none;
+    transition: 1s;
+    right: 0;
+    background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+    z-index: 100;
+    }
+    
+    .hamb__menu li {
+    width: 420px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    color: black;
+    }
+    .hamb__text {
+    user-select: none;
+    border-color: black;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    }
+    
+    .hamb__text li {
+    cursor: pointer;
+    }
+    
+    .hamb__menu.active {
+    display: flex;
+    }
+    
+    .hamb__text li,
+    .hamb__text a {
+    text-decoration: none;
+    list-style-type: none;
+    }
+    
+    .firstlayer:hover {
+    width: 100%;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+    }
+    
+    .more__counties:hover {
+    width: 100%;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+    }
+    
+    .more__counties li:hover {
+    width: 100%;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+    }
+    
+    .more__interactive li:hover {
+    width: 100%;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+    }
+    
+    .more__interactive:hover {
+    width: 100%;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+    }
+    
+    .more__interactive.nohover {
+    color: black;
+    background-color: transparent;
+    }
+    
+    .more__counties.nohover {
+    color: black;
+    background-color: transparent;
+    }
+    
+    
+    .more__counties ul{
+    position: absolute;
+    display: none;
+    transition: 1s;
+    top: 50%;
+    left: 40%;
+    z-index: 105;
+    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+    }
+    
+    .more__interactive ul {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    z-index: 105;
+    transition: 1s;
+    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+    }
+    
+    .more__counties.active ul {
+    display: block;
+    }
+    
+    .more__interactive.active ul {
+    display: block;
+    }
+    
+    .more__counties.active {
+    color: #fff;
+    background: rgba(247, 105, 121, 0.9);
+    }
+    
+    .more__interactive.active {
+    color: #fff;
+    background: rgba(247, 105, 121, 0.9);
+    }
+    
 
     .name{
         margin-top: 5%;
@@ -1655,15 +1540,6 @@ transform: rotateY(360deg);}
         background-size: cover;
     }
 }
-
-@media(max-width: 1700px){
-    
-  .back22{
-      font-size: 19px;
-      padding: 45px;
-  }
-}
-
 @media(max-width: 1100px){
     .stroca1{
         display:flex;
@@ -1683,63 +1559,40 @@ transform: rotateY(360deg);}
         display:flex;
         flex-wrap: wrap;
         }
-    .back2, .back15,.back17, .back19, .back22{
-        font-size: 17px;
-       }
-    .front2, .front15,.front17, .front19 {
-        font-size: 20px; 
-      }
-      .front19 {
-        font-size: 20px;
-      }
-}
-@media(max-width: 600px){
+    }
 
-.stroca2{
-    margin-top: 5%;
-}
-.stroca3{
-    margin-top: 5%;
-}
-.stroca4{
-    margin-top: 5%;
-}
-}
+    @media(max-width: 600px){
 
+        .stroca2{
+            margin-top: 5%;
+        }
+        .stroca3{
+            margin-top: 5%;
+        }
+        .stroca4{
+            margin-top: 5%;
+        }
+        }
 @media(max-width: 800px){
     .front1, .front3, .front4, .front5, .front6, .front7, .front8, .front9, .front10, .front11, .front12, .front13, .front14, .front16, .front17, .front18, .front20, .front21, .front22{
-font-size: 20px;
+font-size: 15px;
     }
     .back1, .back2, .back3, .back4, .back5,.back7, .back8, .back9, .back10, .back11, .back12, .back13, .back14, .back15, .back16, .back17, .back18, .back19, .back20, .back21{
-         font-size: 18px;
+         font-size: 15px;
     }
     .front2, .front15, .front19{
-        font-size: 17px;
+        font-size: 15px;
     }
    .back6{
        font-size: 15px;
    }
    .back22{
-    font-size: 11px;
+    font-size: 15px;
    }
 }
 
-@media(max-width: 1000px){
-    .back6, .front2, .back4, .back18 {
-        font-size: 15px;
-    }
-}    
-@media(max-width: 600px){
-.front17, .back17, .front16, .back16, .back6, .back2, .front2, .back4, .back18 {
-    font-size: 13px;
-}
 
-}
-@media(max-width: 300px){
-    .front2,.back2, .front4, .back4, .front19, .back18, .back6, .front19{
-        font-size: 14px;
-    }
-}
+
 
     
 
