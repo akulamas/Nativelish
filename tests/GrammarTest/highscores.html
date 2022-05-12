@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="highscores.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Kaushan+Script&family=Open+Sans&family=Quicksand&family=Spectral+SC:wght@200&family=Ubuntu&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.98 35.344H6.68V13.528H3.98V11.872H10.064L23.564 32.032H23.708V13.528H21.008V11.872H28.388V13.528H25.688V37H23.276L8.804 15.364H8.66V35.344H11.36V37H3.98V35.344Z" fill="white"/>
+                <path d="M26.98 35.344H29.68V13.528H26.98V11.872H35.476V13.528H32.776V35.236H41.992V30.628H44.584V37H26.98V35.344Z" fill="white"/>
+                <line y1="25.5" x2="45" y2="25.5" stroke="white"/>
+                </svg>
+        </div>
+    <nav class="nav">
+        <div class="nav-elements">
+                <div class="nav__text" id="navtext" style="opacity: 0;">Menu</div>
+                <div class="hamb" id="hamb">
+        </div>
+    <div class="hamb__menu" id="hambmenu">
+        <span class="hamb__design_line" id="fixedahah"></span>
+        <div class="hamb__design"></div>
+        <ul class="hamb__text">
+            <a class="noclick" href="/index.html" id="noclick2"><li class="firstlayer" id="firstlayer1"><p class="style">Home</p></li></a>
+            <li class="more__counties" id="morecountries"><p class="style">Countries</p>
+                <ul>
+                    <span class="hamb__design_line"></span>
+                    <div class="hamb__design2"></div>
+                    <a href="#"><li class="firstlayer"><p class="style">Canada</p></li></a>
+                    <a href="#"><li class="firstlayer"><p class="style">USA</p></li></a>
+                    <a href="#"><li class="firstlayer"><p class="style">New Zeland</p></li></a>
+                    <a href="#"><li class="firstlayer"><p class="style">Great Britain</p></li></a>
+                    <a href="#"><li class="firstlayer"><p class="style">Australia</p></li></a>
+                </ul>
+            </li>
+            <li class="more__interactive" id="moreinteractive"><p class="style">Interactive</p>
+                <ul>
+                    <span class="hamb__design_line"></span>
+                    <div class="hamb__design2"></div>
+                    <a href="/index.html#cards"><li class="firstlayer"><p class="style">Cards</p></li></a>
+                    <a href="/index_tests.html"><li class="firstlayer"><p class="style">Tests</p></li></a>
+                </ul>
+            </li>
+            <a class="noclick" href="#" id="noclick"><li class="firstlayer" id="firstlayer2"><p class="style">Contacts</p></li></a>
+        </ul>
+    </div>
+</nav>
+</header>
+      <script src="script.js"></script>
+      
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard</h1>
+            <ul id="highScoresList"></ul>
+            <a href="index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+        </div>
+    </div>
+    <script src="highscores.js"></script>
+</body>
+</html>
