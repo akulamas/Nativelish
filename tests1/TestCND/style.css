@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+:root {
+   
+    background-image: url(images/background_test.png);
+    background-repeat: no-repeat;
+    font-family: 'Sequel';
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+}
+
+h1 {
+    font-size: 3.4rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #93C2DE 0%, #93C2DE 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, #93C2DE 0%, #93C2DE 100%);
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(29, 158, 213, 0.5)
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/* End Page CSS */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.style {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+ul {
+margin-block-start: 0;
+margin-block-end: 0;
+padding-inline-start: 0;
+}
+
+.header {
+    width: calc(100vw - 210 * (100vw / 1440));
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.logo svg {
+    width: calc(35px + 10 * (100vw / 1440));
+    transform: scale(1.3);
+}
+
+.nav {
+width: calc(130px + 55 * (100vw / 1440));
+position: relative;
+}
+
+.nav-elements {
+width: 170px;
+right: 7%;
+position: fixed;
+z-index: 500;
+}
+
+.nav__text {
+left: 0;
+position: absolute;
+top: 50%;
+font-family: 'Montserrat';
+margin-top: 4%;
+user-select: none;
+font-size: 30px;
+font-weight: 800;
+align-items: center;
+transition: 1.5s;
+z-index: 105;
+}
+
+.nav__text.active {
+opacity: 1;
+}
+
+.hamb {
+position: absolute;
+right: 0;
+background-image: url(images/burg4.png);
+cursor: pointer;
+height: 50px;
+width: 50px;
+transition: 0.1s;
+z-index: 105;
+}
+
+.hamb__design_line {
+width: 100%;
+height: 5px;
+position: absolute;
+background-color: rgba(42, 90, 129);
+}
+.hamb__design {
+border: 15px solid transparent;
+border-top: 15px solid rgba(42, 90, 129);
+position: absolute;
+right: 28%;
+}
+
+.hamb__design2 {
+border: 15px solid transparent;
+border-top: 15px solid rgba(42, 90, 129);
+position: absolute;
+left: 30%;
+}
+
+.hamb.active {
+background-image: url(images/closeburg4.png);
+cursor: pointer;
+height: 50px;
+width: 50px;
+}
+
+.hamb__menu {
+position: fixed;
+top: calc(55px + 30 * (100vw / 1440));
+margin-top: 0%;
+display: none;
+transition: 1s;
+right: 0;
+background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+z-index: 100;
+}
+
+.hamb__menu li {
+width: 420px;
+height: 70px;
+display: flex;
+align-items: center;
+padding-left: 8%;
+color: black;
+}
+.hamb__text {
+user-select: none;
+border-color: black;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+.hamb__text li {
+cursor: pointer;
+}
+
+.hamb__menu.active {
+display: flex;
+}
+
+.hamb__text li,
+.hamb__text a {
+text-decoration: none;
+list-style-type: none;
+}
+
+.firstlayer:hover {
+width: 100%;
+color: #fff;
+background-color: rgba(247, 105, 121, 0.9);
+transition: 0.25s;
+}
+
+.more__counties:hover {
+width: 100%;
+color: #fff;
+background-color: rgba(247, 105, 121, 0.9);
+transition: 0.25s;
+}
+
+.more__counties li:hover {
+width: 100%;
+color: #fff;
+background-color: rgba(247, 105, 121, 0.9);
+transition: 0.25s;
+}
+
+.more__interactive li:hover {
+width: 100%;
+color: #fff;
+background-color: rgba(247, 105, 121, 0.9);
+transition: 0.25s;
+}
+
+.more__interactive:hover {
+width: 100%;
+color: #fff;
+background-color: rgba(247, 105, 121, 0.9);
+transition: 0.25s;
+}
+
+.more__interactive.nohover {
+color: black;
+background-color: transparent;
+}
+
+.more__counties.nohover {
+color: black;
+background-color: transparent;
+}
+
+
+.more__counties ul{
+position: absolute;
+display: none;
+transition: 1s;
+top: 50%;
+left: 40%;
+z-index: 105;
+background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+}
+
+.more__interactive ul {
+display: none;
+position: absolute;
+top: 75%;
+left: 40%;
+z-index: 105;
+transition: 1s;
+background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+}
+
+.more__counties.active ul {
+display: block;
+}
+
+.more__interactive.active ul {
+display: block;
+}
+
+.more__counties.active {
+color: #fff;
+background: rgba(247, 105, 121, 0.9);
+}
+
+.more__interactive.active {
+color: #fff;
+background: rgba(247, 105, 121, 0.9);
+}
+
+@media (max-width: 768px) {
+.hamb__menu {
+    background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.3) 155.89%);
+    width: 100vw;
+    height: 86vh;
+    overflow: scroll;
+    left: 0;
+}
+
+.hamb__menu li {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 0;
+}
+
+.hamb__menu li p {
+    padding-left: 7%;
+}
+
+.hamb__design {
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(42, 90, 129);
+    position: absolute;
+    right: 28%;
+    display: none;
+}
+
+.hamb__design2 {
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(42, 90, 129);
+    position: absolute;
+    left: 30%;
+    display: none;
+}
+
+.more__counties ul li p {
+    padding-left: 17%;
+}
+
+.more__counties:hover {
+    width: 100vw;
+}
+
+.more__interactive:hover {
+    width: 100vw;
+}
+
+.more__counties li:hover {
+    width: 100vw;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+}
+
+.more__interactive li:hover {
+    width: 100vw;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+}
+
+.firstlayer:hover {
+    width: 100vw;
+}
+
+.more__counties ul{
+    padding-left: 0%;
+    width: 100vw;
+    position: absolute;
+    display: none;
+    transition: 1s;
+    left: 0;
+    top: 140px;
+    z-index: 105;
+    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
+}
+
+
+.hamb__design_line {
+    left: 0;
+    width: 100vw;
+}
+
+#fixedahah {
+position: fixed;
+width: 100vw;
+z-index: 500;
+}
+
+.more__interactive ul {
+    padding-left: 0%;
+    width: 100vw;
+    display: none;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    z-index: 105;
+    transition: 1s;
+    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
+}
+
+.more__interactive ul li p {
+    padding-left: 17%;
+}
+
+
+.nav__text.active {
+    display: none;
+}
+}
+
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
