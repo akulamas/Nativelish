@@ -109,132 +109,246 @@ body{
     width: 50px;
     }
     
-    .hamb__menu {
-    position: fixed;
-    top: calc(55px + 30 * (100vw / 1440));
-    margin-top: 0%;
-    display: none;
-    transition: 1s;
-    right: 0;
-    background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
-    z-index: 100;
-    }
-    
-    .hamb__menu li {
-    width: 420px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    padding-left: 8%;
-    color: black;
-    }
-    .hamb__text {
-    user-select: none;
-    border-color: black;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    }
-    
-    .hamb__text li {
-    cursor: pointer;
-    }
-    
-    .hamb__menu.active {
-    display: flex;
-    }
-    
-    .hamb__text li,
-    .hamb__text a {
-    text-decoration: none;
-    list-style-type: none;
-    }
-    
-    .firstlayer:hover {
-    width: 100%;
-    color: #fff;
-    background-color: rgba(247, 105, 121, 0.9);
-    transition: 0.25s;
-    }
-    
-    .more__counties:hover {
-    width: 100%;
-    color: #fff;
-    background-color: rgba(247, 105, 121, 0.9);
-    transition: 0.25s;
-    }
-    
-    .more__counties li:hover {
-    width: 100%;
-    color: #fff;
-    background-color: rgba(247, 105, 121, 0.9);
-    transition: 0.25s;
-    }
-    
-    .more__interactive li:hover {
-    width: 100%;
-    color: #fff;
-    background-color: rgba(247, 105, 121, 0.9);
-    transition: 0.25s;
-    }
-    
-    .more__interactive:hover {
-    width: 100%;
-    color: #fff;
-    background-color: rgba(247, 105, 121, 0.9);
-    transition: 0.25s;
-    }
-    
-    .more__interactive.nohover {
-    color: black;
-    background-color: transparent;
-    }
-    
-    .more__counties.nohover {
-    color: black;
-    background-color: transparent;
-    }
-    
-    
-    .more__counties ul{
-    position: absolute;
-    display: none;
-    transition: 1s;
-    top: 50%;
-    left: 40%;
-    z-index: 105;
-    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
-    }
-    
-    .more__interactive ul {
-    display: none;
-    position: absolute;
-    top: 75%;
-    left: 40%;
-    z-index: 105;
-    transition: 1s;
-    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
-    }
-    
-    .more__counties.active ul {
-    display: block;
-    }
-    
-    .more__interactive.active ul {
-    display: block;
-    }
-    
-    .more__counties.active {
-    color: #fff;
-    background: rgba(247, 105, 121, 0.9);
-    }
-    
-    .more__interactive.active {
-    color: #fff;
-    background: rgba(247, 105, 121, 0.9);
-    }
+        .hamb__menu {
+        position: fixed;
+        top: calc(55px + 30 * (100vw / 1440));
+        margin-top: 0%;
+        display: none;
+        transition: 1s;
+        right: 0;
+        background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+        z-index: 100;
+        }
+        
+        .hamb__menu li {
+        width: 420px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding-left: 8%;
+        color: black;
+        }
+        .hamb__text {
+        user-select: none;
+        border-color: black;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        }
+        
+        .hamb__text li {
+        cursor: pointer;
+        }
+        
+        .hamb__menu.active {
+        display: flex;
+        }
+        
+        .hamb__text li,
+        .hamb__text a {
+        text-decoration: none;
+        list-style-type: none;
+        }
+        
+        .firstlayer:hover {
+        width: 100%;
+        color: #fff;
+        background-color: rgba(247, 105, 121, 0.9);
+        transition: 0.25s;
+        }
+        
+        .more__counties:hover {
+        width: 100%;
+        color: #fff;
+        background-color: rgba(247, 105, 121, 0.9);
+        transition: 0.25s;
+        }
+        
+        .more__counties li:hover {
+        width: 100%;
+        color: #fff;
+        background-color: rgba(247, 105, 121, 0.9);
+        transition: 0.25s;
+        }
+        
+        .more__interactive li:hover {
+        width: 100%;
+        color: #fff;
+        background-color: rgba(247, 105, 121, 0.9);
+        transition: 0.25s;
+        }
+        
+        .more__interactive:hover {
+        width: 100%;
+        color: #fff;
+        background-color: rgba(247, 105, 121, 0.9);
+        transition: 0.25s;
+        }
+        
+        .more__interactive.nohover {
+        color: black;
+        background-color: transparent;
+        }
+        
+        .more__counties.nohover {
+        color: black;
+        background-color: transparent;
+        }
+        
+        
+        .more__counties ul{
+        position: absolute;
+        display: none;
+        transition: 1s;
+        top: 50%;
+        left: 40%;
+        z-index: 105;
+        background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+        }
+        
+        .more__interactive ul {
+        display: none;
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        z-index: 105;
+        transition: 1s;
+        background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+        }
+        
+        .more__counties.active ul {
+        display: block;
+        }
+        
+        .more__interactive.active ul {
+        display: block;
+        }
+        
+        .more__counties.active {
+        color: #fff;
+        background: rgba(247, 105, 121, 0.9);
+        }
+        
+        .more__interactive.active {
+        color: #fff;
+        background: rgba(247, 105, 121, 0.9);
+        }
+        
+        @media (max-width: 768px) {
+        .hamb__menu {
+            background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.3) 155.89%);
+            width: 100vw;
+            height: 86vh;
+            overflow: scroll;
+            left: 0;
+        }
+        
+        .hamb__menu li {
+            width: 100vw;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            color: black;
+            padding-left: 0;
+        }
+        
+        .hamb__menu li p {
+            padding-left: 7%;
+        }
+        
+        .hamb__design {
+            border: 15px solid transparent;
+            border-top: 15px solid rgba(42, 90, 129);
+            position: absolute;
+            right: 28%;
+            display: none;
+        }
+        
+        .hamb__design2 {
+            border: 15px solid transparent;
+            border-top: 15px solid rgba(42, 90, 129);
+            position: absolute;
+            left: 30%;
+            display: none;
+        }
+        
+        .more__counties ul li p {
+            padding-left: 17%;
+        }
+        
+        .more__counties:hover {
+            width: 100vw;
+        }
+        
+        .more__interactive:hover {
+            width: 100vw;
+        }
+        
+        .more__counties li:hover {
+            width: 100vw;
+            color: #fff;
+            background-color: rgba(247, 105, 121, 0.9);
+            transition: 0.25s;
+        }
+        
+        .more__interactive li:hover {
+            width: 100vw;
+            color: #fff;
+            background-color: rgba(247, 105, 121, 0.9);
+            transition: 0.25s;
+        }
+        
+        .firstlayer:hover {
+            width: 100vw;
+        }
+        
+        .more__counties ul{
+            padding-left: 0%;
+            width: 100vw;
+            position: absolute;
+            display: none;
+            transition: 1s;
+            left: 0;
+            top: 140px;
+            z-index: 105;
+            background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
+        }
+        
+        
+        .hamb__design_line {
+            left: 0;
+            width: 100vw;
+        }
+        
+        #fixedahah {
+        position: fixed;
+        width: 100vw;
+        z-index: 500;
+        }
+        
+        .more__interactive ul {
+            padding-left: 0%;
+            width: 100vw;
+            display: none;
+            position: absolute;
+            top: 210px;
+            left: 0;
+            z-index: 105;
+            transition: 1s;
+            background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
+        }
+        
+        .more__interactive ul li p {
+            padding-left: 17%;
+        }
+        
+        
+        .nav__text.active {
+            display: none;
+        }
+        }
     
 
     .name{
