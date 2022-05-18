@@ -425,6 +425,7 @@ body{
     }
     .rectangle1 ,.rectangle2, .rectangle3, .rectangle4, .rectangle5,.rectangle6,.rectangle7:hover {
         background-position: 0%;
+        color: #ffffff;
     }
     
     .intro__button {
