@@ -425,7 +425,6 @@ body{
     }
     .rectangle1 ,.rectangle2, .rectangle3, .rectangle4, .rectangle5,.rectangle6,.rectangle7:hover {
         background-position: 0%;
-        color: #fff;
     }
     
     .intro__button {
@@ -445,6 +444,7 @@ body{
     }
     .rectangle1:hover ,.rectangle2:hover, .rectangle3:hover, .rectangle4:hover, .rectangle5:hover,.rectangle6:hover,.rectangle7:hover {
         background-position: 0%;
+        color: #fff;
     }
      .rectangle2, .rectangle3, .rectangle4, .rectangle5,.rectangle6,.rectangle7{
         background-image: linear-gradient(12deg,#d1966a 10%, #c8706c 50%, transparent 50%);
