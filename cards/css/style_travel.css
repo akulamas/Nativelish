@@ -1704,6 +1704,11 @@ font-size: 15px;
     font-size: 15px;
    }
 }
+@media(max-width: 450px){
+ .back15{
+     font-size: 10px
+    }
+}
 
 
 
