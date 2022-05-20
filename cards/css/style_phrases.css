@@ -1747,6 +1747,11 @@ font-size: 15px;
     font-size: 15px;
    }
 }
+@media(max-width: 500px){
+    .back6{
+        font-size: 10px;
+    }
+}
 
 
 
