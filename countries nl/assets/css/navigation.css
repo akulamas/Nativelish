@@ -19,18 +19,20 @@ ul {
   z-index: 105;
 }
 
-.nav__text {
-  left: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-user-select:none;
-  user-select: none;
-  font-size: 30px;
-  font-weight: 800;
-  align-items: center;
-  transition: 1.5s;
-  z-index: 105;
-}
+      .nav__text {
+        left: 0;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        font-family: 'Montserrat';
+        margin-top: 4%;
+        user-select: none;
+        font-size: 30px;
+        font-weight: 800;
+        align-items: center;
+        transition: 1.5s;
+        z-index: 105;
+        }
 
 .nav__text.active {
   opacity: 1;
