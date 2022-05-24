@@ -8,7 +8,11 @@ margin: 0;
     box-sizing: border-box;
 }
 
-
+@font-face {
+    font-family: 'Gotham Pro';
+    font-weight: 500;;
+    src: url(../GothamPro/GothamPro-Medium.ttf);
+}
 @font-face {
     font-family: 'Sequel';
     src: url(../assets/fonts/Sequel/Sequel.ttf);
