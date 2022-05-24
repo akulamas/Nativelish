@@ -1,0 +1,323 @@
+body {
+  position: relative;
+}
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.nav {
+  width: calc(130px + 55 * (100vw / 1440));
+  position: relative;
+}
+
+.nav-elements {
+  width: 170px;
+  right: 7%;
+  position: fixed;
+  z-index: 105;
+}
+
+.nav__text {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-user-select:none;
+  user-select: none;
+  font-size: 30px;
+  font-weight: 800;
+  align-items: center;
+  transition: 1.5s;
+  z-index: 105;
+}
+
+.nav__text.active {
+  opacity: 1;
+}
+
+.hamb {
+  position: absolute;
+  right: 0;
+  background-image: url(../images/burg4.png);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: 0.1s;
+  z-index: 105;
+}
+
+.hamb__design_line {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background-color: rgba(42, 90, 129);
+}
+.hamb__design {
+  border: 15px solid transparent;
+  border-top: 15px solid rgba(42, 90, 129);
+  position: absolute;
+  right: 28%;
+}
+
+.hamb__design2 {
+  border: 15px solid transparent;
+  border-top: 15px solid rgba(42, 90, 129);
+  position: absolute;
+  left: 30%;
+}
+
+.hamb.active {
+  background-image: url(../images/closeburg4.png);
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.hamb__menu {
+  position: fixed;
+  top: calc(55px + 30 * (100vw / 1440));
+  margin-top: 0%;
+  display: none;
+  transition: 1s;
+  right: 0;
+  background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+  z-index: 100;
+}
+
+.hamb__menu li {
+  width: 420px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  color: black;
+}
+.hamb__text {
+  -webkit-user-select:none;
+  user-select: none;
+  border-color: black;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.hamb__text li {
+  cursor: pointer;
+}
+
+.hamb__menu.active {
+  display: flex;
+}
+
+.hamb__text li,
+.hamb__text a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.firstlayer:hover {
+  width: 92%;
+  color: #fff;
+  background-color: rgba(247, 105, 121, 0.9);
+  transition: 0.25s;
+}
+
+.more__counties:hover {
+  width: 92%;
+  color: #fff;
+  background-color: rgba(247, 105, 121, 0.9);
+  transition: 0.25s;
+}
+
+.more__counties li:hover {
+  width: 92%;
+  color: #fff;
+  background-color: rgba(247, 105, 121, 0.9);
+  transition: 0.25s;
+}
+
+.more__interactive li:hover {
+  width: 92%;
+  color: #fff;
+  background-color: rgba(247, 105, 121, 0.9);
+  transition: 0.25s;
+}
+
+.more__interactive:hover {
+  width: 92%;
+  color: #fff;
+  background-color: rgba(247, 105, 121, 0.9);
+  transition: 0.25s;
+}
+
+.more__interactive.nohover {
+  color: black;
+  background-color: transparent;
+}
+
+.more__counties.nohover {
+  color: black;
+  background-color: transparent;
+}
+
+
+.more__counties ul{
+  position: absolute;
+  display: none;
+  transition: 1s;
+  top: 50%;
+  left: 40%;
+  z-index: 105;
+  background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+}
+
+.more__interactive ul {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  z-index: 105;
+  transition: 1s;
+  background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0) 155.89%);
+}
+
+.more__counties.active ul {
+  display: block;
+}
+
+.more__interactive.active ul {
+  display: block;
+}
+
+.more__counties.active {
+  color: #fff;
+  background: rgba(247, 105, 121, 0.9);
+}
+
+.more__interactive.active {
+  color: #fff;
+  background: rgba(247, 105, 121, 0.9);
+}
+
+@media (max-width: 768px) {
+  .hamb__menu {
+    background: linear-gradient(179.94deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.3) 155.89%);
+    width: 100vw;
+    height: 86vh;
+    overflow: scroll;
+    left: 0;
+  }
+  
+  .hamb__menu li {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 0;
+  }
+
+  .hamb__menu li p {
+    padding-left: 7%;
+  }
+
+  .hamb__design {
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(42, 90, 129);
+    position: absolute;
+    right: 28%;
+    display: none;
+  }
+  
+  .hamb__design2 {
+    border: 15px solid transparent;
+    border-top: 15px solid rgba(42, 90, 129);
+    position: absolute;
+    left: 30%;
+    display: none;
+  }
+
+  .more__counties ul li p {
+    padding-left: 17%;
+  }
+
+  .more__counties:hover {
+    width: 100vw;
+  }
+
+  .more__interactive:hover {
+    width: 100vw;
+  }
+
+  .more__counties li:hover {
+    width: 100vw;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+  }
+  
+  .more__interactive li:hover {
+    width: 100vw;
+    color: #fff;
+    background-color: rgba(247, 105, 121, 0.9);
+    transition: 0.25s;
+  }
+
+  .firstlayer:hover {
+    width: 100vw;
+  }
+
+  .more__counties ul{
+    padding-left: 0%;
+    width: 100vw;
+    position: absolute;
+    display: none;
+    transition: 1s;
+    left: 0;
+    top: 140px;
+    z-index: 105;
+    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
+  }
+
+  /* .more__counties:hover {
+    width: 100vw;
+  } */
+
+  .hamb__design_line {
+    left: 0;
+    width: 100vw;
+  }
+
+#fixedahah {
+  position: fixed;
+  width: 100vw;
+  z-index: 500;
+}
+
+  .more__interactive ul {
+    padding-left: 0%;
+    width: 100vw;
+    display: none;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    z-index: 105;
+    transition: 1s;
+    background: linear-gradient(180deg, #FFFFFF 0.05%, rgba(255, 255, 255, 0.7) 155.89%);
+  }
+
+  .more__interactive ul li p {
+    padding-left: 17%;
+  }
+
+  /* .more__interactive:hover {
+    width: 100vw;
+  } */
+
+  .nav__text.active {
+    display: none;
+  }
+}
