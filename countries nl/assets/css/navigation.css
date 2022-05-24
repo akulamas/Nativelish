@@ -119,35 +119,35 @@ ul {
 }
 
 .firstlayer:hover {
-  width: 92%;
+  width: 100%;
   color: #fff;
   background-color: rgba(247, 105, 121, 0.9);
   transition: 0.25s;
 }
 
 .more__counties:hover {
-  width: 92%;
+  width: 100%;
   color: #fff;
   background-color: rgba(247, 105, 121, 0.9);
   transition: 0.25s;
 }
 
 .more__counties li:hover {
-  width: 92%;
+  width: 100%;
   color: #fff;
   background-color: rgba(247, 105, 121, 0.9);
   transition: 0.25s;
 }
 
 .more__interactive li:hover {
-  width: 92%;
+  width: 100%;
   color: #fff;
   background-color: rgba(247, 105, 121, 0.9);
   transition: 0.25s;
 }
 
 .more__interactive:hover {
-  width: 92%;
+  width: 100%;
   color: #fff;
   background-color: rgba(247, 105, 121, 0.9);
   transition: 0.25s;
