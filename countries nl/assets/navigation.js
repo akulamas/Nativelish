@@ -31,25 +31,25 @@ noclick2.addEventListener("click", (e) => {
   }
 })
 
-canlink.addeventListener("click", (e) => {
+canlink.addEventListener("click", (e) => {
 	i=2;
 	clc();
 	sw();
 })
 
-zellink.addeventListener("click", (e) => {
+zellink.addEventListener("click", (e) => {
 	i=3;
 	clc();
 	sw();
 })
 
-gblink.addeventListener("click", (e) => {
+gblink.addEventListener("click", (e) => {
 	i=4;
 	clc();
 	sw();
 })
 
-auslink.addeventListener("click", (e) => {
+auslink.addEventListener("click", (e) => {
 	i=1;
 	clc();
 	sw();
