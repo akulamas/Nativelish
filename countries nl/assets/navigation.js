@@ -14,6 +14,23 @@ const gblink = document.querySelector("#gblink");
 const auslink = document.querySelector("#auslink");
 
 
+
+
+
+
+
+noclick.addEventListener("click", (e) => {
+  if (noclick.classList.contains ("active")) {
+    e.preventDefault();
+  }
+})
+
+noclick2.addEventListener("click", (e) => {
+  if (noclick.classList.contains ("active")) {
+    e.preventDefault();
+  }
+})
+
 canlink.addeventListener("click", (e) => {
 	i=2;
 	clc();
@@ -38,20 +55,6 @@ auslink.addeventListener("click", (e) => {
 	sw();
 })
 
-
-
-
-noclick.addEventListener("click", (e) => {
-  if (noclick.classList.contains ("active")) {
-    e.preventDefault();
-  }
-})
-
-noclick2.addEventListener("click", (e) => {
-  if (noclick.classList.contains ("active")) {
-    e.preventDefault();
-  }
-})
 
 firstlayer2.addEventListener("click", (e) => {
   alert ("Над сайтом работали: Екатерина Цвирко, Лиана Верес, Саша Титова, Екатерина Ерофеенко, Павел Зенько. Менеджеры проекта: Полина Старостенко, Аня Лизура, Настя Семенова ")
