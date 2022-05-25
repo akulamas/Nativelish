@@ -8,6 +8,37 @@ const navtext = document.querySelector("#navtext");
 const noclick = document.querySelector("#noclick");
 const noclick2 = document.querySelector("#noclick2");
 const body = document.querySelector("#body");
+const canlink = document.querySelector("#canlink");
+const zellink = document.querySelector("#zellink");
+const gblink = document.querySelector("#gblink");
+const auslink = document.querySelector("#auslink");
+
+
+canlink.addeventListener("click", (e) => {
+	i=2;
+	clc();
+	sw();
+})
+
+zellink.addeventListener("click", (e) => {
+	i=3;
+	clc();
+	sw();
+})
+
+gblink.addeventListener("click", (e) => {
+	i=4;
+	clc();
+	sw();
+})
+
+auslink.addeventListener("click", (e) => {
+	i=1;
+	clc();
+	sw();
+})
+
+
 
 
 noclick.addEventListener("click", (e) => {
@@ -23,7 +54,7 @@ noclick2.addEventListener("click", (e) => {
 })
 
 firstlayer2.addEventListener("click", (e) => {
-  alert ("Над сайтом работали: Екатерина Цвирко, Лиана Верес, Саша Титова, Еватерина Ерофеенко, Павел Павлов. Менеджеры проекта: Полина Старостенко, Аня Лизура, Настя Семенова ")
+  alert ("Над сайтом работали: Екатерина Цвирко, Лиана Верес, Саша Титова, Екатерина Ерофеенко, Павел Зенько. Менеджеры проекта: Полина Старостенко, Аня Лизура, Настя Семенова ")
 })
 
 hamb.addEventListener("click", hambHandler);
